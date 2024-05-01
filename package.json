@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "chalk": "^5.3.0",
     "init": "^0.1.2",
     "inquirer": "^9.2.20",
     "node": "^22.0.0",
@@ -9,9 +10,10 @@
     "@types/inquirer": "^9.0.7",
     "@types/node": "^20.12.7"
   },
-  "name": "to-do-app",
+  "name": "saifi_developer-cli_to_do",
   "version": "1.0.0",
   "main": "To_D0.js",
+  "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
