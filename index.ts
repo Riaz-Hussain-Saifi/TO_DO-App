@@ -44,6 +44,7 @@ const main = async () => {
           `\n Task "${chalk.cyanBright(addTask)}" added successfully.\n`
         )
       );
+
     } else if (answers.to_do === "List") {
       // Listing all tasks if available
       if (app.length === 0) {
@@ -55,7 +56,7 @@ const main = async () => {
       } else {
         console.log(chalk.greenBright("\n Here is the list of tasks: "));
         app.forEach((task, index) =>
-          console.log(chalk.bold.cyanBright(`${index + 1}. ${task} \n`))
+          console.log(chalk.bold.cyanBright(`${index + 1}. ${task} \t`))
         );
       }
     } else if (answers.to_do === "Delete") {

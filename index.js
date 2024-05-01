@@ -39,7 +39,7 @@ const main = async () => {
             }
             else {
                 console.log(chalk.greenBright("\n Here is the list of tasks: "));
-                app.forEach((task, index) => console.log(chalk.bold.cyanBright(`${index + 1}. ${task} \n`)));
+                app.forEach((task, index) => console.log(chalk.bold.cyanBright(`${index + 1}. ${task} \t`)));
             }
         }
         else if (answers.to_do === "Delete") {
